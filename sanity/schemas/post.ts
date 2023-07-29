@@ -5,7 +5,7 @@ export default {
   fields: [
     {name: 'title', type: 'string', title: 'Title'},
     {name: 'overview', type: 'string', title: 'Overview'},
-    {name: 'slug', type: 'slug', title: 'Slug'},
+    {name: 'slug', type: 'slug', title: 'Slug', options: {source: 'title'}},
     {
       name: 'content',
       type: 'array',
