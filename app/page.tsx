@@ -1,3 +1,4 @@
+import { Post } from "./lib/interface";
 import { client } from "./lib/sanity";
 
 async function getData() {
@@ -9,6 +10,6 @@ async function getData() {
 }
 
 export default async function IndexPage() {
-  const data = await getData();
+  const data = (await getData()) as Post[];
   return <h1>Hello from the Index Page</h1>;
 }
